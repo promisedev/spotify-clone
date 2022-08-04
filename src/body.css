@@ -1,0 +1,54 @@
+.body_component{width: 100%; height: 400px; background-color: none;margin-bottom: 2%;margin-top: 2%;}
+.body_title{width: 90%; height: 10%; margin-left: 3%; font-size: 24px; color: #fff; font-weight: bold; }
+.body_title_txt{width: fit-content;cursor: pointer;}
+.body_title_txt:hover{text-decoration: underline;}
+.body_link{width: 92%; height: 10%; display: flex; justify-content: flex-end; color: rgb(151, 153, 153); font-size: 14px; font-weight: bold; margin-left: 3%;}
+.body_link_txt{width: fit-content;cursor: pointer;}
+.body_link_txt:hover{text-decoration: underline;}
+.body_link1{justify-content: space-between; }
+
+.body_highlight{font-size: 13px;}
+
+.body_content{width: 100%; height:80%  ; display: flex;}
+
+.single_music{width: 17%; height:93% ; background-color: rgb(16, 16, 17); border-radius: 13px; margin-left: 2%; display: flex; flex-direction: column; align-items: center; cursor: pointer; transition: 0.6s ease-in-out; position:relative}
+.single_music:hover{background-color:rgb(26, 26, 27) ; transition: 0.6s ease-in-out;}
+.music_pp_cont{position:absolute; width: 80%; height: 80px; background-color: none; top:40%; overflow: hidden; display: flex;align-items:center; justify-content: flex-end ;}
+.music_pp{width: 50px; height: 50px; border-radius: 50%; background-color: rgb(20, 189, 90); transform: translateY(30%); transition: 0.1s ease-in;opacity: 0; display: flex; align-items: center; justify-content: center;}
+.music_pp > .MuiSvgIcon-root{ color:black; font-size: 29px;}
+.show_music_pp{transform: translateY(0%);transition: 0.1s ease-in;opacity: 1;}
+
+.music_art{width: 85%; height: 60%; background-color: rgb(35, 33, 33); margin-top: 8%; border-radius: 13px;}
+
+.music_title{width:85%; height: 7%; margin-top: 7%; font-size: 17px; font-weight: bold; color: #fff;}
+.music_desc{width:85%; height: 15%; margin-top: 3%; color: rgb(117, 114, 114); font-size: 14px; font-weight: bold;}
+
+/* ---------footer css-------------- */
+
+.body_footer_cont{ display:flex; flex-direction: column; height: 350px; width: 100%; align-items: center; margin-top: 5%;}
+.body_footer_link{width:90%; height: 70% ; display: flex;}
+.footer_link{ width:60%; height: 100%;background-color: none; display: flex;}
+.single_footer_link{width: 30%; height: 100%; background-color: none; margin-right: 4%;}
+.footer_title{font-size: 16px; color: #fff; font-weight: bold;}
+.footer_list{width: 100%; display: flex; flex-direction: column; background-color: none; justify-content: flex-start;padding:0px }
+.footer_list> li{list-style-type: none; font-size: 16px; color: rgb(151, 153, 153);  margin-bottom: 5%; cursor: pointer;}
+.footer_list> li:hover{text-decoration: underline; color:#fff}
+
+.footer_social{width:40%; height: 100%; display: flex; justify-content: flex-end;}
+.social_link{ width: 40px; height: 40px; background-color: rgb(54, 54, 54); border-radius: 50%; margin-left: 4%; display: flex; justify-content: center; align-items: center;}
+.social_link> .MuiSvgIcon-root{font-size:17px; color:#fff}
+.social_link> .f_icon{padding:0px; background-color: none; border-radius: 50%;overflow: hidden; width: 16px; height: 16px; display: flex; justify-content: center;align-items: center;}
+.social_link> .f_icon>.MuiSvgIcon-root{font-size:20px; color:#fff; }
+
+.social_link:hover{background-color: rgb(94, 93, 93)}
+
+
+
+.body_footer_copy{width:87%; height: 30% ; border-top: 1px solid rgb(117, 114, 114); display: flex;}
+.footer_copy_link{width: 60%;margin-top: 4%;}
+.footer_copy_link > ul{ list-style-type: none; display: flex; padding: 0px; }
+.footer_copy_link > ul>li{ margin-right: 5%; font-size: 14px; color: rgb(151, 153, 153); cursor: pointer;}
+.footer_copy_link > ul>li:hover{text-decoration: underline; color: #fff;}
+
+.footer_copy{width: 35%;display: flex; justify-content: flex-end;margin-top: 4%; font-size: 14px; color: rgb(151, 153, 153); }
+

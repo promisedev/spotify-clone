@@ -1,0 +1,13 @@
+
+[
+    {"id":1,
+        "name":"Company",
+    "list":[{"name":"About"},{"name":"Jobs"},{"name":"For the Record"}]},
+{"id":2,
+        "name":"Communities",
+    "list":[{"name":"For Artists"},{"name":"Developers"},{"name":"Advertising"},{"name":"Investors"},{"name":"Vendors"}]},
+{"id":2,
+        "name":"Useful links",
+    "list":[{"name":"Support"},{"name":"Free Mobile App"}]}
+   
+]
