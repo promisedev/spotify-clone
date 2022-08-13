@@ -1,0 +1,12 @@
+.loading{ width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;}
+
+.loading_dots{ width:15px; height: 15px; border-radius: 50%; background-color: rgb(90, 89, 89); margin-left: 1%;}
+
+.dot1{ animation: dot1 1s ease-in-out 0s infinite  }
+.dot2{animation: dot1 1s ease-in-out 0.1s infinite}
+.dot3{animation: dot1 1s ease-in-out 0.2s infinite}
+
+@keyframes dot1 { from{background-color: rgb(90, 89, 89)}to{background-color: rgb(130, 128, 128)}
+    
+}
+

@@ -7,7 +7,7 @@ import Component5 from './body_comp/component5'
 import Component6 from './body_comp/component6'
 import Footer from './body_comp/footer'
 import axios from 'axios'
-
+import Loading from './body_comp/loading'
 
 const Body = ()=>{
 const headers =  {
@@ -16,11 +16,12 @@ const headers =  {
   }
 ;
 const [songs, setSongs] = useState([])
-
+const [isLoading,setisLoading]= useState(true)
     useEffect(async()=>{
-
+setisLoading(true)
         await axios.get('https://genius.p.rapidapi.com/artists/16775/songs',{headers:headers})
         .then((response)=> {
+          setisLoading(false)
 	setSongs(response.data.response.songs);
 }).catch((error)=> {
 	console.error(error);
@@ -52,7 +53,8 @@ const mytrack = trackhome.filter((track,index)=>index<=4)
 
     return(
         <article className='spot_body'>
-         <div className='spot_body_cont'>   
+         {isLoading?<Loading/>
+         :<div className='spot_body_cont'>   
         <Component1 props={editors}/>
         <Component2 props={myfocus} />
         <Component3  props={mymood} />
@@ -60,7 +62,7 @@ const mytrack = trackhome.filter((track,index)=>index<=4)
          <Component5 props={mysleep} />
          <Component6 props={mytrack}  />
          <Footer/>
-        </div>
+        </div>}
         </article>
     )
 }
